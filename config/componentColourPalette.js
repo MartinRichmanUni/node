@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
     darkButton: {
         backgroundColor: '#00cc00',
         color: '#e5eedb',
-        width: '20vh',
+        width: '20',
         flexDirection: 'row',
-        padding: '2vh',
-        marginHorizontal: '8vh',
-        borderRadius: '2vh',
-        fontSize: '2vh',
+        padding: '2',
+        marginHorizontal: '8',
+        borderRadius: '2',
+        fontSize: '2',
         fontWeight: 'light',
         fontFamily: 'sans-serif',
         justifyContent: 'center',
@@ -22,12 +22,12 @@ const styles = StyleSheet.create({
     lightButton: {
         backgroundColor: '#e5eedb',
         color: '#00cc00',
-        width: '55vh',  
+        width: '55',  
         flexDirection: 'row',
-        padding: '2vh',
-        margin: '2vh',
-        borderRadius: '2vh',
-        fontSize: '2vh',
+        padding: '2',
+        margin: '2',
+        borderRadius: '2',
+        fontSize: '2',
         fontWeight: 'light',
         fontFamily: 'sans-serif',
         justifyContent: 'center',
@@ -36,13 +36,13 @@ const styles = StyleSheet.create({
 
     lightIcon: {
         color: '#e5eedb',
-        marginRight: '2vh',
+        marginRight: '2',
         alignItems: 'flex-start'
     },
 
     darkIcon: {
         color: '#00cc00',
-        marginRight: '2vh',
+        marginRight: '2',
         alignItems: 'flex-start'
     }
 

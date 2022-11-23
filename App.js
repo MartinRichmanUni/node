@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, TouchableOpacity } from 'react-native';
+import { TouchableOpacity as TouchableOpacityGesture } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+
 import { styles } from './config/componentColourPalette.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FruitScreen from './screens/FruitScreen';
@@ -16,15 +17,14 @@ function HomeScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text style={{ fontSize: 26, fontWeight: 'medium' }}>Welcome back</Text>
     <Text style={{fontSize: 26, fontWeight: 'medium', color: '#00cc00'}}>USERNAME!</Text>
-
      <TouchableOpacity style ={styles.lightButton} onPress = {() => {navigation.navigate('Categories')}}>
-                <Ionicons name='library-outline' size='100%' style = {styles.darkIcon}></Ionicons>
+                <Ionicons name='library-outline' size={50} style = {styles.darkIcon}></Ionicons>
                 <Text style={{margin: 10, fontSize: 40}}>Quiz</Text>
             </TouchableOpacity>
 
             <View style={{flexDirection: 'row', marginTop: '10%'}}>
                 <TouchableOpacity style ={styles.darkButton} onPress = {() => {navigation.navigate('Profile')}}>
-                    <Ionicons name='ios-person-circle-outline' size='100%' style = {styles.lightIcon}></Ionicons>
+                    <Ionicons name='ios-person-circle-outline' size={50} style = {styles.lightIcon}></Ionicons>
                     <Text style={{margin: 10, fontSize: 40}}>Profile</Text>
                 </TouchableOpacity>
             </View>

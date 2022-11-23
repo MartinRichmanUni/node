@@ -92,7 +92,7 @@ export default function HomeScreen({ navigation }) {
                 </Text>
                 <Text>
                      {questions[currentQuestion].answerOptions.map((answerOption)=>
-                     <Text onPress={()=>handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}{"\n"}</Text>)}
+                     <Text key={answerOption.answerText} onPress={()=>handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}{"\n"}</Text>)}
                 </Text>
             </>
         )}

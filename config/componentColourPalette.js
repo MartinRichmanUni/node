@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
         color: '#e5eedb',
         flexDirection: 'row',
         padding: '10%',
-        borderRadius: '50%',
-        fontSize: '2%',
+        borderRadius: 50,
+        fontSize: 2,
         fontWeight: 'light',
         fontFamily: 'sans-serif',
         justifyContent: 'center',
@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
         color: '#00cc00', 
         flexDirection: 'row',
         padding: '10%',
-        borderRadius: '50%',
-        fontSize: '2%',
+        borderRadius: 50,
+        fontSize: 2,
         fontWeight: 'light',
         fontFamily: 'sans-serif',
         justifyContent: 'center',
@@ -32,13 +32,13 @@ const styles = StyleSheet.create({
 
     lightIcon: {
         color: '#e5eedb',
-        marginRight: '2%',
+        marginRight: 2,
         alignItems: 'flex-start'
     },
 
     darkIcon: {
         color: '#00cc00',
-        marginRight: '2%',
+        marginRight: 2,
         alignItems: 'flex-start'
     }
 

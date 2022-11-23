@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, StyleSheet } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 var test = "test";
 var test2 = 18+24;
@@ -55,11 +56,11 @@ export default function HomeScreen({ navigation }) {
 
 	const handleAnswerButtonClick = (isCorrect) => {
 		if(isCorrect === true){
-			alert("RIGHT ANSWER!");
+			// alert("RIGHT ANSWER!");
 			setScore(score +1);
 		}
 		else{
-			alert("WRONG!")
+			// alert("WRONG!")
 		}
 
 
@@ -77,11 +78,12 @@ export default function HomeScreen({ navigation }) {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         {}
         {showScore ? (
-            <View>
-    <Text>You scored {score} out of {questions.length}</Text>
-	<Button title="Try Again?" onPress={() => navigation.navigate('Categories')} />
-	<Button title="Home" onPress={() => navigation.navigate('Home')} />
-    </View>
+			<View>			
+			<Text>You scored {score} out of {questions.length}</Text>
+			<Button title="Try Again?" onPress={() => navigation.navigate('Categories')} />
+			<Button title="Home" onPress={() => navigation.navigate('Home')} />
+			</View>
+			
         ) : (
             <>
                 <Text>
@@ -95,5 +97,7 @@ export default function HomeScreen({ navigation }) {
             </>
         )}
     </View>
+	
 );
+
 }

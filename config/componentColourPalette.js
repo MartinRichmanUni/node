@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
         fontWeight: 'light',
         fontFamily: 'sans-serif',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        height:150,
+        width:200
       },
 
     //Light green button
@@ -27,7 +29,9 @@ const styles = StyleSheet.create({
         fontWeight: 'light',
         fontFamily: 'sans-serif',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        height:150,
+        width:200
     },
 
     lightIcon: {

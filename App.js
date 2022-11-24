@@ -39,7 +39,6 @@ function CategoriesScreen({ navigation }) {
       <Button title="Fruits 🍓" onPress={() => navigation.navigate('Fruit')} />
       <Button title="Animals 😼" onPress={() => navigation.navigate('Animal')} />
       <Button title="Random ⁉️" onPress={() => navigation.navigate('Random')} />
-      <Button title="Go back to first screen in stack" onPress={() => navigation.popToTop()}/>
     </View>
   );
 }

@@ -17,15 +17,16 @@ function HomeScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text style={{ fontSize: 26, fontWeight: 'medium' }}>Welcome back</Text>
     <Text style={{fontSize: 26, fontWeight: 'medium', color: '#00cc00'}}>USERNAME!</Text>
+
      <TouchableOpacity style ={styles.lightButton} onPress = {() => {navigation.navigate('Categories')}}>
-                <Ionicons name='library-outline' size={50} style = {styles.darkIcon}></Ionicons>
                 <Text style={{margin: 10, fontSize: 40}}>Quiz</Text>
+                <Ionicons name='library-outline' size={50} style = {styles.darkIcon}></Ionicons>
             </TouchableOpacity>
 
             <View style={{flexDirection: 'row', marginTop: '10%'}}>
                 <TouchableOpacity style ={styles.darkButton} onPress = {() => {navigation.navigate('Profile')}}>
-                    <Ionicons name='ios-person-circle-outline' size={50} style = {styles.lightIcon}></Ionicons>
                     <Text style={{margin: 10, fontSize: 40}}>Profile</Text>
+                    <Ionicons name='ios-person-circle-outline' size={50} style = {styles.lightIcon}></Ionicons>
                 </TouchableOpacity>
             </View>
     </View>
@@ -34,11 +35,24 @@ function HomeScreen({ navigation }) {
 
 function CategoriesScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Categories Screen</Text>
-      <Button title="Fruits 🍓" onPress={() => navigation.navigate('Fruit')} />
-      <Button title="Animals 😼" onPress={() => navigation.navigate('Animal')} />
-      <Button title="Random ⁉️" onPress={() => navigation.navigate('Random')} />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', backgroundColor:'#003f5c'}}>
+
+      <TouchableOpacity style ={styles.fruitButton} onPress = {() => {navigation.navigate('Fruit')}}>
+                <Text style={styles.buttonText}>Fruit</Text>
+                  <Ionicons name='nutrition' size={50} style = {styles.catIcon}></Ionicons>
+      </TouchableOpacity>
+      <TouchableOpacity style ={styles.animalButton} onPress = {() => {navigation.navigate('Animal')}}>
+                <Text style={styles.buttonText}>Animal</Text>
+                  <Ionicons name='paw' size={50} style = {styles.catIcon}></Ionicons>
+      </TouchableOpacity>
+      <TouchableOpacity style ={styles.randomButton} onPress = {() => {navigation.navigate('Random')}}>
+                <Text style={styles.buttonText}>Random</Text>
+                <Ionicons name='help' size={50} style = {styles.catIcon}></Ionicons>
+      </TouchableOpacity>
+      <TouchableOpacity style ={styles.cHomeButton} onPress = {() => {navigation.navigate('Home')}}>
+                <Text style={styles.buttonText}>Home</Text>
+                   <Ionicons name='home' size={50} style = {styles.catIcon}></Ionicons>
+      </TouchableOpacity>
     </View>
   );
 }

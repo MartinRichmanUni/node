@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         fontSize: 2,
         fontWeight: 'light',
-        fontFamily: 'sans-serif',
         justifyContent: 'center',
         alignItems: 'center',
         height:150,
@@ -27,11 +26,59 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         fontSize: 2,
         fontWeight: 'light',
-        fontFamily: 'sans-serif',
         justifyContent: 'center',
         alignItems: 'center',
         height:150,
         width:200
+    },
+
+    fruitButton: {
+        backgroundColor: '#ff6361',
+        flexDirection: 'row',
+        padding: '10%',
+        fontSize: 2,
+        fontWeight: 'light',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height:150,
+        width:'100%'
+    },
+
+    animalButton: {
+        backgroundColor: '#58508d',
+        flexDirection: 'row',
+        padding: '10%',
+        fontSize: 2,
+        fontWeight: 'light',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height:150,
+        width:'100%'
+    },
+
+    randomButton: {
+        backgroundColor: '#ffa600',
+        flexDirection: 'row',
+        padding: '10%',
+        fontSize: 2,
+        fontWeight: 'light',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height:150,
+        width:'100%'
+    },
+
+    
+    cHomeButton: {
+        backgroundColor: '#003f5c',
+        flexDirection: 'row',
+        padding: '10%',
+        fontSize: 2,
+        fontWeight: 'light',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height:150,
+        width:'100%'
     },
 
     lightIcon: {
@@ -44,6 +91,19 @@ const styles = StyleSheet.create({
         color: '#00cc00',
         marginRight: 2,
         alignItems: 'flex-start'
+    },
+
+    catIcon: {
+        color: '#fff',
+        margin: 2,
+        alignItems: 'flex-start'
+    },
+
+    buttonText: {
+        color: '#fff',
+        margin: 10, 
+        fontSize: 40
+
     }
 
 });

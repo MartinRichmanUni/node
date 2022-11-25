@@ -11,7 +11,7 @@ connection.connect(function(err) {
   });
 
 app.get('/users', (req, res) => {
-    connection.query("SELECT * FROM users",(err, result) => {
+    connection.query("SELECT * FROM user",(err, result) => {
       if (err) {
         console.log(err)
       } else {
